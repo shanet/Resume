@@ -10,6 +10,9 @@ The following Arch packages are required:
 * `texlive-bin`
 * `texlive-core`
 * `texlive-latexextra`
+* `aspell`
+
+Other distros should have similar packages available.
 
 ### Building
 
