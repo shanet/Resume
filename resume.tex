@@ -1,0 +1,123 @@
+\documentclass[letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{fontspec}
+\usepackage{enumitem}
+
+\setmainfont{Calibri}
+\newcommand{\setfontsize}{\fontsize{11.5}{16}\selectfont}
+
+% Disable page numbers
+\pagenumbering{gobble}
+
+% Don't number sections
+\setcounter{secnumdepth}{0}
+% Make section font size smaller and bolded
+\titleformat*{\section}{\large\bfseries}
+% Reduce the vertical space after sections
+\titlespacing\section{2pt}{16pt}{3pt}
+
+% Use hypens in lists instead of bullets
+\def\labelitemi{-}
+% Removing spacing in and around lists
+\setlist{nolistsep}
+
+% Macro for making section breaks
+\newcommand{\sectionrule}[1] {
+  \noindent\rule{\textwidth}{.1mm}
+  \vspace{-11mm}
+  \section{#1}
+}
+
+% Macro for indenting sections
+\newenvironment{indentsection}
+  {\begin{adjustwidth}{10mm}{0pt}}
+  {\end{adjustwidth}}
+
+% Macro for job headers
+\newcommand{\job}[5] {
+  \noindent\textbf{#1 \hfill #2}\\
+  \textbf{#3 \hfill #4 - #5}
+
+  \vspace{1mm}
+}
+
+
+% ---------------------------------------------------------------------------------------------------
+
+
+\begin{document}
+  \setfontsize
+
+  \noindent{\Huge Shane Tully}
+  \vspace{2mm}\\
+  \noindent{\Large shane@shanetully.com \textbar\hspace{.5mm} shanetully.com}
+
+
+  % -------------------------------------------------------------------------------------------------
+  \sectionrule{Education}
+
+  \begin{indentsection}
+    \textbf{B.S. in Computer Science}\\
+    Pennsylvania State University, University Park, PA \hfill Cumulative GPA: 3.23/4.00
+  \end{indentsection}
+
+  % -------------------------------------------------------------------------------------------------
+  \sectionrule{Experience}
+
+  \begin{indentsection}
+    \job{Karat, Inc.}{Seattle, Washington}{Software Engineer}{January 2014}{Present}
+    \begin{itemize}
+      \item Built core product and supporting infrastructure with PHP and Ruby on Rails.
+      \item Reduced overhead by automating interview scheduling, recording, and post-processing.
+      \item Formulated structured scoring framework for assessing interviews of software engineering candidates.
+      \item Managed company infrastructure on AWS.
+      \item Maintained and updated multiple production Linux servers.
+    \end{itemize}
+
+    \vspace{5mm}
+
+    \job{Mozilla Corporation}{San Francisco, California}{Software Engineering Intern}{May 2013}{August 2013}
+    \begin{itemize}
+      \item Implemented contacts WebAPI in Firefox for Android.
+      \item Created library for the Gecko engine to be used in third-party Android applications.
+      \item Fixed various bugs in Firefox for Android.
+    \end{itemize}
+
+    \vspace{5mm}
+
+    \job{Pennsylvania State University Chemistry Department}{University Park, Pennsylvania}{Web Developer}{June 2011}{December 2013}
+    \begin{itemize}
+      \item Developed online homework, syllabus, and eBook Drupal modules for university chemistry courses.
+      \item Built web-based interactive atomic orbital visualizations with JavaScript and Java.
+      \item Managed Git server for other team developers.
+    \end{itemize}
+  \end{indentsection}
+
+  % -------------------------------------------------------------------------------------------------
+  \sectionrule{Activities \& Projects}
+
+  \begin{indentsection}
+    \begin{itemize}
+      \item Open source contributor: https://github.com/shanet.
+      \item Seven years Linux and server administration experience.
+      \item Volunteered as webmaster and officer for the Penn State ACM student chapter for three years.
+      \item Developed AES encrypted, cross-platform chat application with Python, QT, and OpenSSL.
+      \item Wrote API and server for networked, autonomous robot utilizing an iRobot Create and Microsoft Kinect.
+      \item Built encrypted server and client for controlling volume and multimedia on Linux desktops with C++, OpenSSL, and Android.
+      \item Participated in PennApps Fall 2013 winning best mobile app with an Android application which uninstalled unwanted applications after a given time interval.
+    \end{itemize}
+  \end{indentsection}
+
+  % -------------------------------------------------------------------------------------------------
+  \sectionrule{Certifications}
+
+  \begin{indentsection}
+    \begin{itemize}
+      \item FAA certified private pilot.
+      \item FCC licensed amateur radio operator.
+    \end{itemize}
+  \end{indentsection}
+
+\end{document}
