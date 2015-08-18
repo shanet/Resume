@@ -1,8 +1,12 @@
 RESUME=resume.tex
+OUTPUT=Shane_Tully_Resume.pdf
 
 pdf:
 	lualatex $(RESUME)
-	mv $(RESUME:.tex=.pdf) Shane_Tully_Resume.pdf
+	mv $(RESUME:.tex=.pdf) $(OUTPUT)
 
 spellcheck:
 	aspell --mode=tex --check $(RESUME)
+
+clean:
+	rm $(OUTPUT)
