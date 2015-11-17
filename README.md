@@ -3,6 +3,8 @@ Résumé
 
 #### Shane Tully (shane@shanetully.com)
 
+[The compiled PDF can be found on my blog](https://shanetully.com/assets/Shane_Tully_Resume.pdf).
+
 ### Dependencies
 
 The following Arch packages are required:
