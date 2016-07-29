@@ -5,7 +5,7 @@ Résumé
 
 [The compiled PDF can be found on my blog](https://shanetully.com/assets/Shane_Tully_Resume.pdf).
 
-### Dependencies
+## Dependencies
 
 The following Arch packages are required:
 
@@ -16,12 +16,12 @@ The following Arch packages are required:
 
 Other distros should have similar packages available.
 
-### Building
+## Building
 
     $ make spellcheck
     $ make pdf
 
-### License
+## License
 
 I have no idea why anyone would want to modify my resume. Maybe you like the layout? Regardless...
 
