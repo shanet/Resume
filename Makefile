@@ -8,5 +8,8 @@ pdf:
 spellcheck:
 	aspell --mode=tex --check $(RESUME)
 
+deploy:
+	scp $(OUTPUT) shane@shanetully.com:/srv/http/blog/assets/
+
 clean:
 	rm $(OUTPUT)
