@@ -13,6 +13,9 @@ The following Arch packages are required:
 * `texlive-core`
 * `texlive-latexextra`
 * `aspell`
+* `aspell-en`
+
+https://aur.archlinux.org/packages/ttf-vista-fonts can be used to install the Calibri font.
 
 Other distros should have similar packages available.
 
