@@ -1,19 +1,21 @@
 Résumé
 ======
 
-#### Shane Tully (shane@shanetully.com)
-
-[The compiled PDF can be found on my blog](https://shanetully.com/assets/Shane_Tully_Resume.pdf).
+#### Kira Tully (kira@kiratully.com)
 
 ## Dependencies
 
 The following Arch packages are required:
 
+* `aspell-en`
+* `aspell`
+* `otf-latin-modern`
 * `texlive-bin`
 * `texlive-core`
+* `texlive-fontsextra`
+* `texlive-fontsrecommended`
 * `texlive-latexextra`
-* `aspell`
-* `aspell-en`
+* `texlive-luatex`
 
 https://aur.archlinux.org/packages/ttf-vista-fonts can be used to install the Calibri font.
 
@@ -21,14 +23,16 @@ Other distros should have similar packages available.
 
 ## Building
 
-    $ make spellcheck
-    $ make pdf
+```
+$ make spellcheck
+$ make pdf
+```
 
 ## License
 
 I have no idea why anyone would want to modify my resume. Maybe you like the layout? Regardless...
 
-Copyright (C) 2015 Shane Tully
+Copyright (C) 2015 Kira Tully
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
