@@ -1,5 +1,5 @@
 RESUME=resume.tex
-OUTPUT=Shane_Tully_Resume.pdf
+OUTPUT=Kira_Tully_Resume.pdf
 
 pdf:
 	lualatex $(RESUME)
@@ -7,9 +7,6 @@ pdf:
 
 spellcheck:
 	aspell --mode=tex --check $(RESUME)
-
-deploy:
-	scp $(OUTPUT) shane@shanetully.com:/srv/http/blog/assets/
 
 clean:
 	rm $(OUTPUT)
